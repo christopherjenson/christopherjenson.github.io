@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-## About Me:
 Father, Husband and Veteran.
 
 I'm a Senior Systems Engineer by day specializing in End User Compute.  Virtual Desktop Infrastructure mostly, but have performed various roles in the past comprising of Device Management, Mobile Device Management, Application deployment, Group Policy Administration and anything else that delivers the best quality and experience.  I also specialize in the consumption and enjoyment of coffee which is proportionately increased by the previous.
