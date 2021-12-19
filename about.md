@@ -11,4 +11,5 @@ I'm fortunate to be part of a team that is revolutionizing the idea of what Virt
 
 ### Current Information Technology Industry Certifications
 <img src="{{ site.baseurl }}/images/ncm-mci-5.png" alt="Nutanix Certified Master - Multicloud Infrastructure 5.15" style="width: 160px;"/>
+
 Demonstrated ability to perform complex administrative tasks on a Nutanix Cluster, as well as optimize both virtualized workloads and infrastructure components in an AOS 5.x deployment.
