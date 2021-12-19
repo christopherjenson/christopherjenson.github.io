@@ -3,13 +3,13 @@ layout: page
 title: About
 permalink: /about/
 ---
+## About Me:
+Father, Husband and Veteran.
 
-Some information about you!
+I'm a Senior Systems Engineer by day specializing in End User Compute.  Virtual Desktop Infrastructure mostly, but have performed various roles in the past comprising of Device Management, Mobile Device Management, Application deployment, Group Policy Administration and anything else that delivers the best quality and experience.  I also specialize in the consumption and enjoyment of coffee which is proportionately increased by the previous.
 
-### More Information
+I'm fortunate to be part of a team that is revolutionizing the idea of what Virtual Desktop Infrastructure is and how it is managed and delivered.  Utilizing a more modern approach with Infrastructure as Code utilizing Terraform and Configuration Management using Ansible. 
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+### Current Information Technology Industry Certifications
+<img src="{{ site.baseurl }}/images/ncm-mci-5.png" alt="Nutanix Certified Master - Multicloud Infrastructure 5.15" style="width: 160px;"/>]({{ site.baseurl }}/)
+Demonstrated ability to perform complex administrative tasks on a Nutanix Cluster, as well as optimize both virtualized workloads and infrastructure components in an AOS 5.x deployment.
