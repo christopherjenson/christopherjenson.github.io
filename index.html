@@ -1,18 +1,150 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christopher Jenson - Personal website and portfolio">
+    <title>Christopher Jenson - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Christopher Jenson</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Hi, I'm Christopher Jenson</h1>
+                <p class="hero-subtitle">Developer, Designer, Creator</p>
+                <p class="hero-description">
+                    Welcome to my corner of the internet. I build things, write about technology, 
+                    and share my journey in software development.
+                </p>
+                <div class="hero-actions">
+                    <a href="about.html" class="button button-primary">Learn More</a>
+                    <a href="projects.html" class="button button-secondary">View Projects</a>
+                </div>
+            </div>
+        </section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Posts</h2>
+                <div class="grid">
+                    <article class="card">
+                        <div class="card-content">
+                            <span class="card-tag">Technology</span>
+                            <h3><a href="posts/sample-post-1.html">Getting Started with Modern Web Development</a></h3>
+                            <p class="card-meta">January 15, 2026</p>
+                            <p>An introduction to modern web development tools and practices for 2026.</p>
+                            <a href="posts/sample-post-1.html" class="card-link">Read more →</a>
+                        </div>
+                    </article>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+                    <article class="card">
+                        <div class="card-content">
+                            <span class="card-tag">Design</span>
+                            <h3><a href="posts/sample-post-2.html">Design Principles for Better UX</a></h3>
+                            <p class="card-meta">January 10, 2026</p>
+                            <p>Key design principles that make for better user experiences in digital products.</p>
+                            <a href="posts/sample-post-2.html" class="card-link">Read more →</a>
+                        </div>
+                    </article>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+                    <article class="card">
+                        <div class="card-content">
+                            <span class="card-tag">Development</span>
+                            <h3><a href="posts/sample-post-3.html">Building Scalable Applications</a></h3>
+                            <p class="card-meta">January 5, 2026</p>
+                            <p>Strategies and patterns for building applications that scale with your users.</p>
+                            <a href="posts/sample-post-3.html" class="card-link">Read more →</a>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="blog.html" class="button button-secondary">View All Posts</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section secondary-bg">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Project One</h3>
+                            <p>A brief description of your first featured project and what makes it interesting.</p>
+                            <a href="projects.html" class="card-link">View project →</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Project Two</h3>
+                            <p>A brief description of your second featured project and its key features.</p>
+                            <a href="projects.html" class="card-link">View project →</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Project Three</h3>
+                            <p>A brief description of your third featured project and what you learned.</p>
+                            <a href="projects.html" class="card-link">View project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Christopher Jenson</h3>
+                    <p>Building the web, one project at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Christopher Jenson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
