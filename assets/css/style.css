@@ -1,4 +1,4 @@
-/* Modern Static Site Stylesheet */
+/* Modern Jekyll Site Stylesheet */
 
 :root {
     --primary-color: #2563eb;
@@ -289,6 +289,13 @@ body {
 .content-section h2 {
     font-size: 1.875rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
 }
 
 .content-section p,
@@ -303,6 +310,15 @@ body {
 .content-section ol {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
+}
+
+.content-section a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
 }
 
 /* Post Content */
@@ -343,6 +359,16 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.post-content ul,
+.post-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
 .post-content code {
     background-color: var(--secondary-bg);
     padding: 0.2rem 0.4rem;
@@ -362,6 +388,23 @@ body {
 .post-content pre code {
     background-color: transparent;
     padding: 0;
+}
+
+.post-tags {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Contact Form */

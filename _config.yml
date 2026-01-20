@@ -1,0 +1,54 @@
+# Site settings
+title: Christopher Jenson
+description: Developer, Designer, Creator
+url: "https://christopherjenson.github.io"
+baseurl: ""
+
+# Author information
+author:
+  name: Christopher Jenson
+  email: contact@christopherjenson.com
+  github: yourusername
+  linkedin: yourusername
+  twitter: yourusername
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Christopher Jenson"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - CNAME
+
+# Sass settings
+sass:
+  style: compressed

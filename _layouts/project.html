@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<main>
+    <header class="content-header">
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+            {% if page.tagline %}
+            <p>{{ page.tagline }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    {% if page.technologies %}
+                    <div style="margin-bottom: 2rem;">
+                        <strong>Technologies:</strong> {{ page.technologies | join: ', ' }}
+                    </div>
+                    {% endif %}
+
+                    {{ content }}
+
+                    {% if page.demo_url or page.github_url %}
+                    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        {% if page.demo_url %}
+                        <a href="{{ page.demo_url }}" target="_blank" rel="noopener" class="button button-primary">View Demo</a>
+                        {% endif %}
+                        {% if page.github_url %}
+                        <a href="{{ page.github_url }}" target="_blank" rel="noopener" class="button button-secondary">GitHub</a>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <a href="{{ '/projects' | relative_url }}" class="button button-secondary">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+</main>

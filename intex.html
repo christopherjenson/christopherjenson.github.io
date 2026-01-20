@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Hi, I'm {{ site.author.name }}</h1>
+            <p class="hero-subtitle">Developer, Designer, Creator</p>
+            <p class="hero-description">
+                Welcome to my corner of the internet. I build things, write about technology, 
+                and share my journey in software development.
+            </p>
+            <div class="hero-actions">
+                <a href="{{ '/about' | relative_url }}" class="button button-primary">Learn More</a>
+                <a href="{{ '/projects' | relative_url }}" class="button button-secondary">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Latest Posts</h2>
+            <div class="grid">
+                {% for post in site.posts limit:3 %}
+                <article class="card">
+                    <div class="card-content">
+                        {% if post.categories %}
+                        <span class="card-tag">{{ post.categories | first | capitalize }}</span>
+                        {% endif %}
+                        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                        <p class="card-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+                        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                        <a href="{{ post.url | relative_url }}" class="card-link">Read more →</a>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="{{ '/blog' | relative_url }}" class="button button-secondary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section secondary-bg">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid">
+                {% for project in site.projects limit:3 %}
+                <div class="card">
+                    <div class="card-content">
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.excerpt | strip_html | truncatewords: 20 }}</p>
+                        <a href="{{ project.url | relative_url }}" class="card-link">View project →</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>

@@ -53,29 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form validation and submission
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Basic validation
-            if (name && email && message) {
-                // Here you would typically send the form data to a server
-                // For now, we'll just show a success message
-                alert('Thank you for your message! I\'ll get back to you soon.');
-                contactForm.reset();
-            } else {
-                alert('Please fill out all fields.');
-            }
-        });
-    }
-    
     // Add animation on scroll
     const observerOptions = {
         threshold: 0.1,
@@ -97,14 +74,5 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.transform = 'translateY(20px)';
         element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(element);
-    });
-    
-    // Set active navigation item based on current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        const linkPage = link.getAttribute('href');
-        if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
-            link.classList.add('active');
-        }
     });
 });
